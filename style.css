@@ -1,0 +1,82 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(214, 211, 211);
+}
+
+nav{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(2, 2, 32);
+    color: white;
+}
+
+.logo{
+    font-size: 25px;
+    margin-left: 13px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    margin-right: 13px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    margin-inline: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+nav ul li a:hover, nav ul li a.activeClass {
+    color: rgb(5, 206, 206);
+    font-weight: 500;
+}
+
+.menuIcon{
+    display: none;
+    align-items: center;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width:600px) {
+    nav{
+        padding: 0 10px;
+    }
+    nav ul{
+        display: none;
+    }
+    .menuIcon{
+        display: flex;
+        cursor: pointer;
+    }
+
+    .showData{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 55px;
+        background-color: rgb(146, 144, 144);
+        width: 100%;
+        height: 240px;
+        gap: 20px;
+        padding: 0%;
+        text-align: center;
+        margin-top: 5px;
+    }
+}
